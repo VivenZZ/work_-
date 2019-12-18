@@ -1120,3 +1120,9 @@
     color: #999999;
     border-radius: 0.6rem;
 }
+.club_store_none-order {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
