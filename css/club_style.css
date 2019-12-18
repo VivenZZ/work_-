@@ -1,0 +1,394 @@
+/* 顶部头图 */
+.card{
+	background-color: #333;
+	text-align: center;
+}
+.card img{
+	max-width: 15rem;
+	padding-top: 1.38rem;
+}
+
+
+/* 头像部分 */
+.card_infor{
+	background-color: #fff;
+	margin-top: -2rem;
+}
+.top_infor .weui-cell{
+	border: 0;
+	padding-right: 0;
+}
+.weui-cell__hd img{
+	width:2.5rem;
+	margin-right:.65rem;
+	display:block;
+	color: #444;
+	border-radius: 50%;
+}
+.card_infor .weui-cells{
+	margin-top: 0;
+}
+.card_infor .weui-cell__bd{
+	font-size: .7rem;
+}
+.btn_upgrade{
+	font-size: .6rem;
+	height: 1.45rem;
+	line-height: 1.45rem;
+}
+.btn_upgrade{
+	color: #fff;
+	background-color: #C0A679;
+	margin-left: 5.8rem;
+}
+
+/* 条形码 */
+.bar_code{
+	text-align: center;
+	background-color: #f8f8f8;
+}
+.bar_code img{
+	display: block;
+	width: 11.675rem;
+	height: 2.68rem;
+	margin: 0 auto;
+	padding-top: .65rem;
+	padding-bottom: .65rem;
+}
+
+/* 数值信息 */
+.card_infor .code_infor{
+	margin-top: 1.8rem;
+}
+.code_infor,.score_infor{
+	font-size: .7rem;
+}
+.code_infor .num,.score_infor .num{
+	margin-left: 1.2rem;
+}
+
+
+/* 集团卡样式增添 */
+.card_all{
+	background-color: #fff;
+}
+.card_all img{
+	padding-top: 1.18rem;
+	padding-bottom: .8rem;
+}
+.allcard_func{
+	margin-top: 0;	
+}
+.allcard_func .weui-cell{
+	padding-top: 0;
+}
+.allcard_func .top_infor{
+	width: 15rem;
+}
+
+.allcard_func .weui-cell__hd img{
+	margin-right: 1.23rem;
+}
+.allcard_func .weui-cell__bd p{
+	width: 3.25rem;
+}
+.allcard_func .btn_upgrade{
+	margin-left: 0;
+}
+
+.bar_all img{
+	padding-bottom: 0;
+}
+.bar_all p{
+	font-size: .5rem;
+	font-weight: 500;
+	color: #606060;
+	letter-spacing: .35rem;
+	padding-bottom: .45rem;
+}
+
+.card_box{
+	margin-top: .3rem;
+}
+.card_box .weui-grid{
+	width: 50%;
+}
+.card_box .weui-grid__icon{
+	width: 1.6rem;
+	height: 1.6rem;
+}
+.weui-grid:after,
+.weui-grid:before,
+.weui-grids:before{
+	border: 0;
+}
+.gold{
+	color: #C2A661;
+}
+
+/* 集团卡信息页 */
+.card_contain{
+	margin-top: 0;
+}
+.card_contain .weui-grids{
+	border: 0;
+	padding: 0;
+	padding-top: .5rem;
+}
+.weui-grids:after, 
+.weui-grids:before{
+	content: none;
+}
+.card_contain .weui-grid{
+	padding: 0;
+}
+.card_contain .weui-grid__title{
+	text-align: center;
+	font-size: .7rem;
+	color: #9E9F9F;
+	padding-bottom: .6rem;
+}
+.card_contain .weui-grid__label{
+	color: #C0A679;
+	font-size: .7rem;
+}
+.borleft{
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #E1E1E1;
+}
+.card_contain .btn_signin{
+	margin-top: 1.2rem;
+	width: 9.5rem;
+}
+
+.card_link{
+	border-top: 1px solid #E1E1E1;
+	margin-top: 2rem;
+}
+.card_link .weui-cell{
+	padding-left: 15px;
+}
+.card_link a{
+	color: #3A3A3A;
+	
+}
+.card_link a:active{
+	color: #E1E1E1;
+}
+.card_link .weui-select{
+	height: auto;
+}
+
+/* 集团会员卡详情页 */
+.detail_pic{
+	background-image:url("../img/bac.jpg") ;
+	color: #fff;
+	
+}
+.pic_words{
+	max-width: 16.75rem;
+	margin: 0 auto;
+	padding-top: 2.1rem;
+	padding-bottom: .88rem;
+}
+.detail_pic .infor:after{
+	content:""; 
+  display: block; 
+  clear:both; 
+}
+.detail_pic .infor p{
+	float: left;
+	font-size: .7rem;
+}
+.pic_words .title{
+	margin-bottom: 1.8rem;
+	font-size: .8rem;
+}
+.pic_words .number{
+	color: #C0A679;
+	margin-left: .375rem;
+}
+.pic_words .marleft{
+	margin-left: 1.5rem;
+}
+
+.card_define {
+	width: 17rem;
+	margin: 0 auto;
+	margin-top: 1.5rem;
+	box-sizing: border-box;
+}
+.card_define:before,
+.card_define:after{
+	border: 0;
+}
+.card_define .weui-panel__hd{
+	padding: 0;
+	border-left: 4px solid #C2A661;
+	color: #9F9F9F;
+	font-size: .7rem;
+	height: .7rem;
+	line-height: .7rem;
+	padding-left: .4rem;
+	margin-bottom: .6rem;
+}
+.card_define .weui-panel__hd:after{
+	content: none;
+}
+.card_define .weui-panel__bd{
+	border-top: 1px solid #E5E5E5;
+}
+.card_define .weui-media-box{
+	padding: .8rem 0 0 .58rem;
+}
+.card_define .weui-media-box__desc{
+	color: #3A3A3A;
+	font-size: .7rem;
+	line-height: 1.3rem;
+}
+.member_benefits:first-child{
+	margin-top: 1.5rem;
+}
+
+.getcard_pic{
+	padding-top: 2.25rem;
+	padding-bottom: 2.25rem;
+}
+a.getcard_btn{
+	width: 15rem;
+	margin-top: 7rem;
+}
+.clubcard_detail{
+	display: block;
+	text-align: center;
+	color: #7A7A7A;
+	font-size: .7rem;
+	margin-top: .8rem;
+}
+
+
+/* 修改个人信息 */
+.changeinfor{
+	margin-top: 0;
+	width: 100%;
+}
+.changeinfor .weui-cell{
+	padding-right: 0;
+	width: 17rem;
+	margin: 0 auto;
+}
+.changeinfor .card_infor{
+	margin: 0;
+}
+.changeinfor .weui-input{
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	height: auto;
+}
+.changeinfor .btn_area{
+	width: 88.24%;
+	margin: 7.7rem auto 0;
+}
+.changeinfor .btn_area .btn_signin{
+	flex: 1;
+	margin: 0;
+	border-radius: 0;
+	border: 1px solid #C0A679;
+}
+.changeinfor .btn_area .cancel{
+	color: #000;
+	background-color: #fff;
+	border-right: 0;
+}
+.changeinfor .btn_area .cancel:active{
+	background-color: #dedede;
+}
+
+/* 更改地址页面 */
+.noborder{
+	border-bottom: 0;
+}
+.transbac{
+	background-color: transparent;
+}
+.weui-check__label:active{
+	background-color: transparent;
+}
+.weui-cells_checkbox .weui-cell__bd{
+	font-size: .6rem;
+	color: #9f9f9f;
+}
+.weui-cells_checkbox .weui-icon-checked:before{
+	font-size: .8rem;
+}
+.weui-cells_checkbox .weui-check:checked+.weui-icon-checked:before{
+	color: #c0a679;
+}
+a.btn_save{
+	margin-top: 11.25rem;
+}
+
+/* 收货地址列表页面 */
+.toptip .tips{
+	width: 17rem;
+	margin: 0 auto;
+	padding: 12px 0;
+	font-size: .7rem;
+}
+.addressList .weui-form-preview__hd{
+	width: 17rem;
+	margin: 0 auto;
+	padding: 10px 0;
+}
+.weui-form-preview__hd .head{
+	font-size: .6rem;
+	line-height: 1.2rem;
+	color: #000;
+}
+.weui-form-preview__hd .address{
+	font-size: .6rem;
+	color: #9f9f9f;
+	text-align: left;
+	line-height: 1.2rem;
+}
+.weui-form-preview__hd:after{
+	left: 0;
+}
+.addressList{
+	margin-bottom: .5rem;
+}
+.addressList .weui-cells_checkbox{
+	margin-top: 0;
+}
+.addressList .weui-cells_checkbox .weui-cell{
+	padding-top: 12px;
+	padding-bottom: 15px;
+}
+.addressList .rightpart .weui-btn{
+	width: auto;
+	padding-right: 0;
+}
+.addressList .rightpart .alter{
+	display: inline-block;
+	font-size: .6rem;
+	padding-left:1rem;
+	height: .9rem;
+	line-height: .95rem;
+	background: #fff url('../img/change.png') no-repeat top left;
+	background-size: .9rem .9rem;
+	margin-top: 12px;
+	margin-left: .85rem;
+}
+.addressList .rightpart .delete{
+	background-image: url('../img/bin.png');
+}
+a.add_address{
+	margin-top: 5rem;
+}
+
+/* 新增收货地址 */
+a.btn_address{
+	margin-top: 13rem;
+	width: 15rem;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>加入购物车/立即兑换</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <link rel="stylesheet" type="text/css" href="css/weui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-weui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/club_style.css">
+    <link rel="stylesheet" href="css/club_store.css">
+</head>
+<body ontouchstart>
+<div class="swiper-container club_store-swiper club_score_details_container" data-space-between='10' data-pagination='.swiper-pagination' data-autoplay="1000">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="http://www.harborhousehome.com/UploadFile/Sku/2/220_220/1015600202.jpg" alt=""></div>
+        <div class="swiper-slide">
+            <img src="http://www.harborhousehome.com/UploadFile/Sku/2/220_220/1015550612.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="http://www.harborhousehome.com/UploadFile/Sku/2/220_220/1054724011.jpg" alt="">
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
+<div class="club_score_details_info">
+    <p class="name">全棉四件套</p>
+    <p class="score">
+        <span>68000</span>积分<del>￥680</del>
+    </p>
+    <div class="spe">
+        <span class="title">规格：</span>
+        <p class="content">
+            <span>直径50cmX高60cm</span>
+        </p>
+    </div>
+    <div class="col">
+        <span class="title">色款：</span>
+        <div class="content">
+            <div class="col-img">
+                <img src="http://www.harborhousehome.com/UploadFile/Sku/2/220_220/1054724011.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="addCart_kg"></div>
+<div class="addCart_choice">
+    <span class="title">选择数量：</span>
+    <div class="btn">
+        <span class="add"></span>
+        <span class="text">
+            <input type="text" value="1">
+        </span>
+        <span class="reduce"></span>
+    </div>
+</div>
+<div class="addCart_choice_bottom">
+    <p>确认</p>
+</div>
+
+<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="js/jquery-weui.min.js"></script>
+<script type="text/javascript" src="js/swiper.js"></script>
+<script type="text/javascript">
+    $(".swiper-container").swiper({})
+    // 操作成功调用
+    $.toast("操作成功");
+</script>
+
+</body>
+</html>

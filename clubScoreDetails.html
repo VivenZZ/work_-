@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>居家四件套</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <link rel="stylesheet" type="text/css" href="css/weui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-weui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/club_style.css">
+    <link rel="stylesheet" href="css/club_store.css">
+</head>
+<body ontouchstart>
+<div class="swiper-container club_store-swiper club_score_details_container" data-space-between='10' data-pagination='.swiper-pagination' data-autoplay="1000">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="http://www.harborhousehome.com/UploadFile/Sku/2/220_220/1015600202.jpg" alt=""></div>
+        <div class="swiper-slide">
+            <img src="http://www.harborhousehome.com/UploadFile/Sku/2/220_220/1015550612.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="http://www.harborhousehome.com/UploadFile/Sku/2/220_220/1054724011.jpg" alt="">
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
+<div class="club_score_details_info">
+    <p class="name">全棉四件套</p>
+    <p class="score">
+        <span>68000</span>积分<del>￥680</del>
+    </p>
+    <div class="spe">
+        <span class="title">规格：</span>
+        <p class="content">
+            <span>直径50cmX高60cm</span>
+        </p>
+    </div>
+    <div class="col">
+        <span class="title">色款：</span>
+        <div class="content">
+            <div class="col-img">
+                <img src="http://www.harborhousehome.com/UploadFile/Sku/2/220_220/1054724011.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="club_score_details">
+    <p class="title">— 商品详情 —</p>
+    <div class="details_info">
+        商品详情商品详情商品详情商品详情商品详情商品详情商品详情商品详情商品详情商品详情商品详情商品详情商品详情商品详情商品详情商品详情商品详情商品详情商品详情商品详情商品详情商品详情商品详情商品详情商品详情商品详情商品详情商品详情
+    </div>
+</div>
+<div class="club_score_details_bottom">
+    <a href="javascript:;" class="join_cart open-popup" data-target="#half">加入购物车</a>
+    <a href="javascript:;" class="redeem_now open-popup" data-target="#half">立即兑换</a>
+</div>
+<div id="half" class="weui-popup__container popup-bottom">
+    <div class="weui-popup__overlay close-popup"></div>
+    <div class="weui-popup__modal">
+        <div class="tck">
+            <div class="club_score_details_info">
+                <p class="name">全棉四件套</p>
+                <p class="score">
+                    <span>68000</span>积分<del>￥680</del>
+                </p>
+                <div class="spe">
+                    <span class="title">规格：</span>
+                    <p class="content">
+                        <span>直径50cmX高60cm</span>
+                    </p>
+                </div>
+                <div class="col">
+                    <span class="title">色款：</span>
+                    <div class="content">
+                        <div class="col-img">
+                            <img src="http://www.harborhousehome.com/UploadFile/Sku/2/220_220/1054724011.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="addCart_choice">
+                <span class="title">选择数量：</span>
+                <div class="btn">
+                    <span class="reduce"></span>
+                    <span class="text">
+                                <input type="text" value="1">
+                            </span>
+                    <span class="add  add_current"></span>
+                </div>
+            </div>
+            <p class="entry">
+                确认
+            </p>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="js/fastclick.js"></script>
+<script type="text/javascript" src="js/jquery-weui.min.js"></script>
+<script type="text/javascript" src="js/swiper.js"></script>
+<script type="text/javascript">
+$(function () {
+    FastClick.attach(document.body);
+    var u = navigator.userAgent, app = navigator.appVersion
+    var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+    $("input").blur(function(){
+        if (isIOS) {
+            blurAdjust()
+        }
+    });
+// 解决苹果不回弹页面
+    function blurAdjust(e){
+        setTimeout(()=>{
+            if(document.activeElement.tagName == 'INPUT' || document.activeElement.tagName == 'TEXTAREA'){
+                return
+            }
+            let result = 'pc';
+            if(/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) { //判断iPhone|iPad|iPod|iOS
+                result = 'ios'
+            }else if(/(Android)/i.test(navigator.userAgent)) {  //判断Android
+                result = 'android'
+            }
+
+            if( result = 'ios' ){
+                document.activeElement.scrollIntoViewIfNeeded(true);
+            }
+        },100)
+    }
+    $(".swiper-container").swiper({});
+    $(".entry").click(function () {
+        // 操作成功调用
+        $.toast("操作成功");
+        $.closePopup()
+    })
+    $('.close-popup').click(function () {
+        $.closePopup()
+    })
+    // 点击+-
+    $('.addCart_choice').each(function () {
+        var _this = $(this);
+        var val = _this.find('input').val();
+        // -
+        _this.find(".reduce").on('click', function () {
+            if (val <= 1) {
+                _this.find('.reduce').removeClass('reduce_current');
+            } else {
+                _this.find('input').val(--val)
+            }
+        })
+        // +
+        _this.find(".add").on('click', function () {
+            _this.find('.reduce').addClass('reduce_current');
+            _this.find('input').val(++val)
+        })
+    })
+})
+</script>
+
+</body>
+</html>

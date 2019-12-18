@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>集团卡会员中心</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<link rel="stylesheet" type="text/css" href="css/weui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-weui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/club_style.css">
+</head>
+<body ontouchstart>
+	<div class="card card_all">
+		<img src="img/all.png" alt="">
+	</div>
+
+	<div class="weui_article card_infor allcard_func">
+
+		<div class="weui-cells top_infor">
+      <div class="weui-cell">
+        <div class="weui-cell__hd">
+        	<img src="img/head.jpg" alt="">
+        </div>
+        <div class="weui-cell__bd">
+          <p>枫雨蓝雪</p>
+        </div>
+        <div class="weui-cell__ft">
+        	<a href="clubCard_detail01.html" class="weui-btn weui-btn_default btn_upgrade">会员卡信息</a>
+        </div>
+      </div> 
+    </div>
+
+    <div class="bar_code bar_all">
+    	<img src="img/barcode.jpg" alt="">
+    	<p>001946959212</p>
+    </div>
+
+	</div>
+
+	<div class="weui-grids card_box">
+    <a href="connectCard.html" class="weui-grid js_grid">
+      <div class="weui-grid__icon">
+      	<img src="img/clubsign01.png" alt="">
+      </div>
+      <p class="weui-grid__label">
+        绑定品牌会员卡
+      </p>
+    </a>
+    <a href="changePersonalInfor.html" class="weui-grid js_grid">
+      <div class="weui-grid__icon">
+      	<img src="img/clubsign02.png" alt="">
+      </div>
+      <p class="weui-grid__label">
+        修改资料
+      </p>
+    </a>
+    <a href="member_benefits.html" class="weui-grid js_grid">
+      <div class="weui-grid__icon">
+      	<img src="img/clubsign03.png" alt="">
+      </div>
+      <p class="weui-grid__label">
+        会员权益
+      </p>
+    </a>
+    <div href="javascript:void();" class="weui-grid js_grid" id="club_call">
+      <div class="weui-grid__icon">
+      	<img src="img/clubsign04.png" alt="">
+      </div>
+      <p class="weui-grid__label">
+        联系客服
+      </p>
+    </div>
+  
+  </div>
+
+
+<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="js/jquery-weui.min.js"></script>
+
+<script type="text/javascript">
+	$("#club_call").on('click',function(){
+		$.modal({
+      title: "呼叫",
+		  text: "000-000-111",
+		  buttons: [
+		    { text: "取消", className:"default", onClick: function(){ console.log(1)} },
+		    { text: "呼叫", className:"gold", onClick: function(){ console.log(2)} },
+		  ],
+		});
+	});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>附件门店</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+
+	<link rel="stylesheet" type="text/css" href="css/weui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-weui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/updateCard.css">
+	<link rel="stylesheet" type="text/css" href="css/nearby.css">
+</head>
+<body ontouchstart class="graybac">
+	
+  <!-- 顶部选择框 -->
+  <div class="weui-cells weui-cells_form connect_card" id="brand_entrance">   
+    <div class="weui-cell weui-cell_select weui-cell_select-after">
+      <div class="weui-cell__hd">
+        <label for="" class="weui-label">会员卡所属品牌</label>
+      </div>
+      <div class="weui-cell__hd">
+        <input class="weui-input" placeholder="请选择" id="choice" readonly>
+      </div>
+      <div class="weui-cell__bd"></div>
+    </div>
+    
+    <ul class="brandlist" id="brandContainer" style="display:none;">
+      <li class="hh" data-sign="Harbor House" data-value="1" >
+        <img src="img/brand_HH.png" alt="">
+      </li>
+      <li class="inkivy" data-sign="INK+IVY" data-value="2" >
+        <img src="img/brand_II.png" alt="">
+      </li>
+      <li class="tao" data-sign="Tao" data-value="3">
+        <img src="img/brand_Tao.png" alt="">
+      </li>
+    </ul>
+  </div> 
+
+  <!-- 列表展示框 -->
+	<div class="nearby">
+    <div class="nearby-pannel weui-flex">
+      <div class="nearleft weui-flex__item">
+        <h4 class="nearby-title">杭州第六空间西溪艺术广场店杭州第六空间西溪艺术广场店</h4>
+        <p class="nearby-desc">杭州市西湖区文一西路830号第六空间西溪生活广场1层3号</p>
+      </div>
+
+      <div class="nearright weui-flex__item">
+        <img class="loc" src="img/loc.png">
+        <p class="distance"><span>15.20</span>公里</p>
+        
+      </div>
+    </div>
+
+    <div class="nearby-pannel weui-flex">
+      <div class="nearleft weui-flex__item">
+        <h4 class="nearby-title">杭州第六空间西溪艺术广场店杭州第六空间西溪艺术广场店</h4>
+        <p class="nearby-desc">杭州市西湖区文一西路830号第六空间西溪生活广场1层3号</p>
+      </div>
+
+      <div class="nearright weui-flex__item">
+        <img class="loc" src="img/loc.png">
+        <p class="distance"><span>15.20</span>公里</p>
+        
+      </div>
+    </div>
+
+    <div class="nearby-pannel weui-flex">
+      <div class="nearleft weui-flex__item">
+        <h4 class="nearby-title">杭州第六空间西溪艺术广场店杭州第六空间西溪艺术广场店</h4>
+        <p class="nearby-desc">杭州市西湖区文一西路830号第六空间西溪生活广场1层3号</p>
+      </div>
+
+      <div class="nearright weui-flex__item">
+        <img class="loc" src="img/loc.png">
+        <p class="distance"><span>15.20</span>公里</p>
+        
+      </div>
+    </div>
+  </div>
+
+
+<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="js/jquery-weui.min.js"></script>
+<script type="text/javascript" src="js/brandChoose.js"></script>
+
+</body>
+</html>

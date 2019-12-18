@@ -1,0 +1,27 @@
+/* forgetPassword样式 */
+.fp_detail{
+	margin-top: 1.7rem;
+}
+.fp03{
+	margin-top: 8rem;
+}
+.fp03 .weui-icon-success{
+	color: #C0A679;
+	font-size: 1.3rem;
+}
+.fp03 .weui-msg__icon-area{
+	margin-bottom: 11.7rem;
+}
+.fp03 .weui-msg__title{
+	font-size: .9rem;
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 0;
+	padding-left: .3rem;
+}
+.fp03 .btn_finish{
+	background-color: #C0A679;
+  width: 88.24%;
+  font-size: .7rem;
+  color: #fff;}
+

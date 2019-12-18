@@ -1,0 +1,127 @@
+/* logo部分 */
+.card_logo{
+	justify-content: center;
+	align-content: center;
+}
+
+.card_logo img{
+	max-width: 16.5rem;
+	height: 3.5rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+/* 会员卡信息部分 */
+.card_detail{
+	margin-top: 0;
+	border-top: 1px solid #e1e1e1;
+}
+.card_detail .card_infor{
+	color: #9f9f9f;
+	font-size: .7rem;
+}
+
+.weui-vcode-btn:active{
+	color: #9f9f9f;
+}
+
+.card_detail .cphone,
+.card_detail .cmsg{
+	padding-right: 0;
+}
+
+.card_detail .weui-label{
+	width: 4.5rem;
+}
+.card_detail .swords{
+	line-height: 1rem;
+	height: .6rem;
+	color: #9f9f9f;
+}
+a.btn_update{
+	background-color: #C0A679;
+	width: 88.24%;
+	font-size: .7rem;
+	color: #fff;
+	margin: 3.125rem auto 0;
+}
+/* 关联品牌会员卡页面 */
+.connect_card,
+.connect_detail{
+	width: 100%;
+	margin-top: 0;
+}
+.connect_card .weui-cell,
+.connect_detail .weui-cell{
+	width: 16rem;
+	margin: 0 auto;
+	padding: 0;
+	border: 0;
+}
+.connect_card .weui-cell__hd{
+	flex: 5;
+}
+.connect_card .weui-cell__bd{
+	flex: 1;
+}
+.weui-cell_select .pointDown:after{
+	-webkit-transform: matrix(-.71,.71,-.71,-.71,0,0);
+	   -moz-transform: matrix(-.71,.71,-.71,-.71,0,0);
+	    -ms-transform: matrix(-.71,.71,-.71,-.71,0,0);
+	     -o-transform: matrix(-.71,.71,-.71,-.71,0,0);
+	        transform: matrix(-.71,.71,-.71,-.71,0,0);
+}
+.connect_card .weui-label{
+	width: auto;
+}
+.connect_card .weui-cell__bd{
+	height: 2.75rem;
+	line-height: 2.75rem;
+}
+.connect_card .weui-cell__bd:after{
+	right: 10px;
+	top: 51%;
+}
+.connect_card .weui-input{
+	text-align: right;
+}
+
+.brandlist{
+	background-color: #fff;
+	width: 100%;
+}
+.brandlist li{
+	text-decoration: none;
+	text-align: center;
+	border-bottom: 1px solid #e1e1e1;
+}
+.brandlist li:hover{
+	background-color: #e1e1e1;
+}
+.brandlist li img{
+	width: 10.4rem;
+	padding-top: 1.25rem;
+	padding-bottom: 1.25rem;
+}
+
+.signwords{
+	color: #C0A679;
+	font-size: .6rem;
+	width: 16rem;
+	margin: .5rem auto;
+}
+
+.connect_detail{
+	margin-bottom: .5rem;
+}
+.connect_detail .weui-cell{
+	padding: .8rem 0;
+}
+.connect_detail .border_bot{
+	border-bottom: 1px solid #e1e1e1;
+}
+a.btn_next{
+	margin-top: 12rem;
+}
+
+

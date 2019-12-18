@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>物流信息</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <link rel="stylesheet" type="text/css" href="css/weui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-weui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/club_style.css">
+    <link rel="stylesheet" href="css/club_store.css">
+</head>
+<body ontouchstart>
+<div id="logisticsInformation">
+    <div class="myOrder_title my_logistics">
+        <span class="my_order_title_active">快递1</span>
+        <span>快递2</span>
+        <span>快递3</span>
+    </div>
+    <div class="kg"></div>
+    <div class="header">
+        <p class="name">物流公司： <span>中通快递</span></p>
+        <p class="code">运单编号： <input id="copyText" readonly type="text" value="2315165615"><i id="copy">复制</i></p>
+    </div>
+    <div class="kg"></div>
+    <div class="information">
+        <p class="title">物流跟踪</p>
+        <div class="information_item information_item-current">
+            <div class="information_item_left">
+                <span class="point"></span>
+                <span class="line"></span>
+            </div>
+            <div class="information_item_right">
+                <p class="status">已签收</p>
+                <p class="content">快递已有本人签收巴拉巴拉快递已有本人签收巴拉巴拉快递已有本人签收巴拉巴拉快递已有本人签收巴拉巴拉快递已有本人签收巴拉巴拉</p>
+                <p class="time">2018-11-25 11:15</p>
+            </div>
+        </div>
+        <div class="information_item">
+        <div class="information_item_left">
+            <span class="point"></span>
+            <span class="line"></span>
+        </div>
+        <div class="information_item_right">
+            <p class="status">已签收</p>
+            <p class="content">快递已有本人签收巴拉巴拉</p>
+            <p class="time">2018-11-25 11:15</p>
+        </div>
+    </div>
+        <div class="information_item">
+            <div class="information_item_left">
+                <span class="point"></span>
+                <span class="line"></span>
+            </div>
+            <div class="information_item_right">
+                <p class="status">已签收</p>
+                <p class="content">快递已有本人签收巴拉巴拉</p>
+                <p class="time">2018-11-25 11:15</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="js/jquery-weui.min.js"></script>
+<script type="text/javascript" src="js/swiper.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $(".swiper-container").swiper({})
+        // 控制线的高度
+        $('.information_item').each(function () {
+            let height = $(this).height();
+            $(this).find('.information_item_left').height(height);
+        })
+
+        // 复制文本
+        $("#copy").on('click', function () {
+            document.getElementById("copyText").select();
+            document.execCommand('Copy');
+            $.toast("复制成功");
+        })
+    })
+</script>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>收货地址列表</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<link rel="stylesheet" type="text/css" href="css/weui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-weui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/club_style.css">
+</head>
+<body ontouchstart class="graybac">
+	<div class="toptip">
+		<p class="tips">已有<span class="havenum">1</span>个地址，还可以添加<span class="canadd">14</span>个地址</p>
+	</div>
+
+	<div class="weui-form-preview addressList">
+	  <div class="weui-form-preview__hd">
+	    <label class="weui-form-preview__label head">HHIITAO</label>
+	    <em class="weui-form-preview__value head">186XXXX1212</em>
+	    <p class="address">浙江省杭州市西湖区西园路XX号XX楼浙江省杭州市西湖区西园路XX号XX楼浙江省杭州市西湖区西园路XX号XX楼</p>
+	  </div>
+
+		<div class="weui-cells weui-cells_checkbox clearfix">
+			<label class="weui-cell weui-check__label noborder fl" for="s11">
+		    <div class="weui-cell__hd">
+		      <input type="checkbox" class="weui-check" name="checkbox1" id="s11">
+		      <i class="weui-icon-checked"></i>
+		    </div>
+		    <div class="weui-cell__bd">
+		      <p>设为默认地址</p>
+		    </div>
+		  </label>
+
+		  <div class="rightpart fr">
+		  	<button class="weui-btn weui-btn_default alter">修改</button>
+				<button class="weui-btn weui-btn_default alter delete">删除</button>
+		  </div>
+		</div>
+
+	</div>
+
+	<div class="weui-form-preview addressList">
+	  <div class="weui-form-preview__hd">
+	    <label class="weui-form-preview__label head">HHIITAO</label>
+	    <em class="weui-form-preview__value head">186XXXX1212</em>
+	    <p class="address">浙江省杭州市西湖区西园路XX号XX楼浙江省杭州市西湖区西园路XX号XX楼浙江省杭州市西湖区西园路XX号XX楼</p>
+	  </div>
+
+		<div class="weui-cells weui-cells_checkbox clearfix">
+			<!-- 注意每新增一个地址卡片label的for属性必须和下面input的id属相相同，且在整个页面中必须和其它卡片不同，需要有变化 -->
+			<label class="weui-cell weui-check__label noborder fl" for="s12">
+		    <div class="weui-cell__hd">
+		      <input type="checkbox" class="weui-check" name="checkbox2" id="s12">
+		      <i class="weui-icon-checked"></i>
+		    </div>
+		    <div class="weui-cell__bd">
+		      <p>设为默认地址</p>
+		    </div>
+		  </label>
+
+		  <div class="rightpart fr">
+		  	<button class="weui-btn weui-btn_default alter">修改</button>
+				<button class="weui-btn weui-btn_default alter delete">删除</button>
+		  </div>
+		</div>
+
+	</div>
+
+	<div class="weui-form-preview addressList">
+	  <div class="weui-form-preview__hd">
+	    <label class="weui-form-preview__label head">HHIITAO</label>
+	    <em class="weui-form-preview__value head">186XXXX1212</em>
+	    <p class="address">浙江省杭州市西湖区西园路XX号XX楼浙江省杭州市西湖区西园路XX号XX楼浙江省杭州市西湖区西园路XX号XX楼</p>
+	  </div>
+
+		<div class="weui-cells weui-cells_checkbox clearfix">
+			<!-- 注意每新增一个地址卡片label的for属性必须和下面input的id属相相同，且必须和其它卡片不同，需要有变化 -->
+			<label class="weui-cell weui-check__label noborder fl" for="s13">
+		    <div class="weui-cell__hd">
+		      <input type="checkbox" class="weui-check" name="checkbox3" id="s13">
+		      <i class="weui-icon-checked"></i>
+		    </div>
+		    <div class="weui-cell__bd">
+		      <p>设为默认地址</p>
+		    </div>
+		  </label>
+
+		  <div class="rightpart fr">
+		  	<button class="weui-btn weui-btn_default alter">修改</button>
+				<button class="weui-btn weui-btn_default alter delete">删除</button>
+		  </div>
+		</div>
+
+	</div>
+
+	<a href="addAddress.html" class="weui-btn weui-btn_default btn_signin add_address">新增地址</a>
+
+	
+
+
+<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="js/jquery-weui.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$(".weui-check").click(function(){
+			$(this).parents().eq(3).siblings().find(".weui-check").removeAttr("checked");
+		});
+		// console.log($(".weui-check:checked").parents().eq(3));
+	});
+</script>
+
+</body>
+</html>

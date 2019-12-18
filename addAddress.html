@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>新增收货地址</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<link rel="stylesheet" type="text/css" href="css/weui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-weui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/club_style.css">
+</head>
+<body ontouchstart class="graybac">
+
+	<div class="weui-cells weui-cells_form changeinfor">
+		<div class="weui-cell">
+	    <div class="weui-cell__hd"><label class="weui-label">收件人</label></div>
+	    <div class="weui-cell__bd">
+	      <input class="weui-input" type="text" placeholder="请输入收件人">
+	    </div>
+	  </div>
+
+	  <div class="weui-cell">
+	    <div class="weui-cell__hd"><label class="weui-label">地区</label></div>
+	    <div class="weui-cell__bd">
+	      <input id="citypicker" class="weui-input" type="text" data-toggle='date' value="" placeholder="        省        市        区">
+	    </div>
+	  </div>
+
+	  <div class="weui-cell">
+	    <div class="weui-cell__hd"><label class="weui-label">地址</label></div>
+	    <div class="weui-cell__bd">
+	      <input class="weui-input" type="text" placeholder="请填写具体地址">
+	    </div>
+	  </div>
+
+	  <div class="weui-cell">
+	    <div class="weui-cell__hd"><label class="weui-label">手机</label></div>
+	    <div class="weui-cell__bd">
+	      <input class="weui-input" type="number" placeholder="请输入手机号码">
+	    </div>
+	  </div>
+
+	  <div class="weui-cell noborder">
+	    <div class="weui-cell__hd"><label class="weui-label">固话</label></div>
+	    <div class="weui-cell__bd">
+	      <input class="weui-input" type="number" placeholder="请输入固定电话">
+	    </div>
+	  </div>	
+	</div>
+
+	<!-- 按钮 -->
+	<div class="weui-cells weui-cells_checkbox changeinfor transbac">
+		<label class="weui-cell weui-check__label noborder" for="s11">
+	    <div class="weui-cell__hd">
+	      <input type="checkbox" class="weui-check" name="checkbox1" id="s11">
+	      <i class="weui-icon-checked"></i>
+	    </div>
+	    <div class="weui-cell__bd">
+	      <p>设为默认地址</p>
+	    </div>
+	  </label>
+	  <a href="addressList.html" class="weui-btn weui-btn_default btn_signin btn_save">保存</a>
+	</div>
+ 
+
+
+<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="js/jquery-weui.min.js"></script>
+<script type="text/javascript" src="js/city-picker.min.js"></script>
+
+<!-- 地址选择初始化 -->
+<script type="text/javascript">
+
+	$("#citypicker").cityPicker({
+		title: '请选择地址'
+	});
+</script>
+
+</body>
+</html>

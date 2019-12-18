@@ -1,0 +1,172 @@
+/* 小屏iPhone SE适配 */
+@media only screen and (max-width: 320px){
+	html{
+		font-size: 17.06px!important;
+	}
+}
+/* 大屏ipad适配 */
+@media only screen and (min-width: 768px){
+	html{
+		font-size: 40.93px!important;
+	}
+	.weui-label{
+		width: 230px;
+	}
+	div.log-form_link{
+		margin-top: 2rem;
+	}
+	div .log-form_footer,
+	div .sign-form_footer{
+		margin-top: 1rem;
+	}
+}
+
+.fl{float: left;}
+.fr{float: right;}
+.clearfix:after{
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+}
+
+body.graybac{
+	background-color: #F8F8F8;
+}
+/* Tab部分样式 */
+.weui-navbar+.weui-tab__bd{
+	padding-top: 0
+}
+
+.weui-navbar{
+	top: 9.75rem;/*
+	width: 17rem;
+	margin-left: .88rem; */
+	justify-content: center;
+	background-color: #fff;
+}
+
+.weui-navbar__item{
+	font-size: .8rem;
+	line-height: 1.88em;
+	color:#3a3a3a;
+	background: rgb(255,255,255) none repeat scroll 0 0;
+	width: 8.5rem;
+	flex: none;
+	border-bottom: 1px solid #ccc;
+}
+.weui-navbar__item:after{
+	border-right: 0;
+}
+.weui-navbar__item.weui-bar__item--on {
+    background: rgb(255,255,255) none repeat scroll 0 0;
+    border-bottom: 4px solid #C2A661;
+    color: #3a3a3a;
+}
+
+.weui-cells{
+	margin-top: 6.75rem;
+	width: 17rem;
+	/* margin-left: .88rem; */
+	margin-left: auto;
+	margin-right: auto;
+	font-size: .7rem;
+}
+.weui-cells:after, .weui-cells:before,
+.weui-cell:before,.weui-navbar:after,
+.weui-btn:after{
+	content: none;
+}
+.weui-cell{
+		border-bottom: 1px solid #e1e1e1;
+		padding:15px 15px 12px 0;
+}
+
+.weui-cells__tips{
+	font-size: .5rem;
+	width: 16.61rem;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 0;
+	color: #e64340;
+}
+
+/* 按钮部分 */
+a.btn_login,a.btn_signin{
+	background-color: #C0A679;
+	width: 88.24%;
+	font-size: .7rem;
+	color: #fff;
+}
+a.btn_login{
+	/* margin: 3.125rem auto 0; */
+	margin: 2rem auto 0;
+}
+a.btn_signin{
+	margin: 1.9rem auto 0;
+}
+.weui-btn_default:not(.weui-btn_disabled):visited{
+	color: #fff;
+}
+.weui-cell_vcode{
+	padding-bottom: 10px;
+}
+button.weui-vcode-btn{
+	color:#fff;
+	font-size: .6rem;
+	border-left: 0;
+	height: 1.25rem;
+	line-height: 1.25rem;
+	display: inline-block;
+	background-color: #C0A679;
+	border-radius: 5px;
+}
+.weui-vcode-btn:active{
+	color: rgba(0,0,0,.3);
+}
+.weui-btn_disabled.weui-btn_default{
+	background-color: #f2f2f2;
+	color: #C0A679;
+}
+
+.security_code_enter{
+	display: block;
+	font-size: .7rem;
+	color: #7a7a7a;
+	text-align: center;
+	margin-top: 1rem;
+}
+
+/* 底部文字部分 */
+.log-form_footer,
+.sign-form_footer{
+	/* margin-top: 4rem; */
+	margin-top: 3rem;
+	width: 17rem;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: .7rem;
+	clear: both;
+}
+.log-form_footer .fl,
+.log-form_footer .fr,
+.sign-form_footer .fr{
+	color: #7a7a7a;
+}
+.log-form_footer .fl{float: left;}
+.log-form_footer .fr{float: right;}
+
+.sign-form_footer{
+	margin-top: 2.5rem;
+}
+.sign-form_footer .fr{float:right;}
+
+/* 通过验证码登录部分 */
+.security_login{
+	margin-top: 1.5rem;
+}
+.security_login .btn_signin{
+	margin-top: 5rem;
+}
+

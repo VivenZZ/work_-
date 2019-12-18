@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>修改个人资料</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<link rel="stylesheet" type="text/css" href="css/weui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-weui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/club_style.css">
+</head>
+<body ontouchstart>
+
+	<div class="weui-cells weui-cells_form changeinfor">
+		<div class="weui-cell">
+      <div class="weui-cell__hd"><label class="weui-label">账号</label></div>
+      <div class="weui-cell__bd">
+        <p class="card_infor">XXXXXXXXX@163.com</p>
+      </div>
+    </div>
+
+    <div class="weui-cell">
+      <div class="weui-cell__hd"><label class="weui-label">会员名</label></div>
+      <div class="weui-cell__bd">
+        <p class="card_infor">枫雨蓝雪</p>
+      </div>
+    </div>
+
+	  <div class="weui-cell">
+	    <div class="weui-cell__hd"><label class="weui-label">出生日期</label></div>
+	    <div class="weui-cell__bd">
+	      <input id="datepicker" class="weui-input" type="text" data-toggle='date' value="" placeholder="        年        月        日">
+	    </div>
+	  </div>
+
+	  <div class="weui-cell weui-cell_vcode">
+	    <div class="weui-cell__hd">
+	      <label class="weui-label">手机号码</label>
+	    </div>
+	    <div class="weui-cell__bd">
+	      <p class="weui-input">18666666666</p>
+	    </div>
+	    <div class="weui-cell__ft">
+	      <a href="changePhone01.html" class="weui-vcode-btn">修改绑定</a>
+	    </div>
+	  </div>
+
+	  <div class="weui-cell weui-cell_vcode">
+	    <div class="weui-cell__hd">
+	      <label class="weui-label">Email</label>
+	    </div>
+	    <div class="weui-cell__bd">
+	      <p class="weui-input">XXXXX@163.com</p>
+	    </div>
+	    <div class="weui-cell__ft">
+	      <a href="#" class="weui-vcode-btn">修改绑定</a>
+	    </div>
+	  </div>
+		
+		<div class="weui-cell">
+	    <div class="weui-cell__hd"><label class="weui-label">所在区域</label></div>
+	    <div class="weui-cell__bd">
+	      <input id="citypicker" class="weui-input" type="text" data-toggle='date' value="" placeholder="        省        市        区">
+	    </div>
+	  </div>
+
+	  <div class="weui-cell">
+	    <div class="weui-cell__hd"><label class="weui-label">详细地址</label></div>
+	    <div class="weui-cell__bd">
+	      <input class="weui-input" type="text">
+	    </div>
+	  </div>
+
+	  <div class="weui-cell weui-cell_vcode">
+	    <div class="weui-cell__hd">
+	      <label class="weui-label">收货地址</label>
+	    </div>
+	    <div class="weui-cell__bd">
+	      <input class="weui-input" type="text" value=" ">
+	    </div>
+	    <div class="weui-cell__ft">
+	      <a href="addAddress_blank.html" class="weui-vcode-btn">修改地址</a>
+	    </div>
+	  </div>
+	  
+	  <!-- 按钮 -->
+	  <div class="btn_area weui-flex">
+	  	<a href="club_all.html" class="weui-btn weui-btn_default btn_signin cancel">取消</a>
+	  	<a href="club_all.html" class="weui-btn weui-btn_default btn_signin">保存</a>
+	  </div>
+		
+	</div>
+		
+ 
+
+
+<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="js/jquery-weui.min.js"></script>
+<script type="text/javascript" src="js/city-picker.min.js"></script>
+
+<!-- 日期及地址选择器初始化-->
+<script type="text/javascript">
+
+	$("#datepicker").calendar({
+  	dateFormat: 'yyyy年mm月dd日'  
+	});
+	$("#citypicker").cityPicker({
+		title: '请选择地址'
+	});
+	if(false){
+		$.toptip('您输入有误，请重新输入', 1500, 'warning');
+	}
+</script>
+
+</body>
+</html>

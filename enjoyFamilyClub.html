@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>享家俱乐部</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <link rel="stylesheet" type="text/css" href="css/weui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-weui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/club_style.css">
+    <link rel="stylesheet" href="css/club_store.css">
+</head>
+<body ontouchstart>
+
+<div class="weui_article card_infor allcard_func">
+    <div class="weui-cells top_infor">
+        <div class="weui-cell weui-flex">
+            <div class="weui-cell__hd">
+                <img src="img/head.jpg" alt="">
+            </div>
+            <div class="weui-flex__item">
+                <p><span>枫雨蓝雪</span><span class="club_store-card">VIP 金卡</span></p>
+                <p><span class="club_store-name-score">8000</span><span class="club_store-score_text">积分</span> </p>
+            </div>
+            <div class="weui-cell__ft">
+                <a class="club_store-zn " href="clubCard_detail01.html">积分兑换指南</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="swiper-container club_store-swiper" data-space-between='10' data-pagination='.swiper-pagination' data-autoplay="1000">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="http://www.harborhousehome.com/UploadFile/Activity/Resources/homeimages/20191029/banner.jpg" alt=""></div>
+        <div class="swiper-slide">
+            <img src="http://www.harborhousehome.com/UploadFile/Activity/Resources/homeimages/20190321/banner.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="http://www.harborhousehome.com/UploadFile/Activity/Resources/homeimages/20191025/banner.jpg" alt="">
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
+<div class="weui-flex club_store-search">
+    <div class="weui-search-bar weui-flex__item" id="searchBar">
+        <form class="weui-search-bar__form" action="">
+            <div class="weui-search-bar__box">
+                <i class="weui-icon-search"></i>
+                <input type="search" class="weui-search-bar__input" id="searchInput" placeholder="搜索商品名称/编码" required="">
+                <a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+            </div>
+            <label class="weui-search-bar__label" id="searchText">
+                <i class="weui-icon-search"></i>
+                <span>搜索商品名称/编码</span>
+            </label>
+        </form>
+        <a href="javascript:" class="weui-search-bar__cancel-btn" id="searchCancel">取消</a>
+    </div>
+    <div class="club_store-px" style="line-height: 2.3rem">
+        <span>积分排序</span>
+        <span class="club_store-px_up club_store-px_down">
+        </span>
+    </div>
+</div>
+<div class="" style=" padding-bottom: 3.2rem;">
+    <div id="club_store-list">
+        <div class="club_store-list_item">
+            <div class="img_box">
+                <img width="100%" src="http://www.harborhousehome.com/UploadFile/Sku/2/220_220/1054724011.jpg" alt="">
+            </div>
+            <p class="name">全面四件套</p>
+            <p class="score"><span>68000</span>积分</p>
+            <p class="price"><del>￥699</del></p>
+        </div>
+        <div class="club_store-list_item">
+            <div class="img_box">
+                <img width="100%" src="http://www.harborhousehome.com/UploadFile/Sku/2/220_220/1054724011.jpg" alt="">
+            </div>
+            <p class="name">全面四件套</p>
+            <p class="score"><span>68000</span>积分</p>
+            <p class="price"><del>￥699</del></p>
+        </div>
+        <div class="club_store-list_item">
+            <div class="img_box">
+                <img width="100%" src="http://www.harborhousehome.com/UploadFile/Sku/2/220_220/1054724011.jpg" alt="">
+            </div>
+            <p class="name">全面四件套</p>
+            <p class="score"><span>68000</span>积分</p>
+            <p class="price"><del>￥699</del></p>
+        </div>
+    </div>
+    <div class="weui-loadmore">
+        <i class="weui-loading"></i>
+        <span class="weui-loadmore__tips">正在加载</span>
+    </div>
+</div>
+<div class="club_store-bootm">
+    <a class="club_store-bootm_item club_store-bootm_item-current">
+        <img src="./img/club_store/store_01.png" alt="">
+        <span>首页</span>
+    </a>
+    <a class="club_store-bootm_item">
+        <img src="./img/club_store/store_02-current.png" alt="">
+        <span>购物车</span>
+    </a>
+    <a class="club_store-bootm_item">
+        <img src="./img/club_store/store_03-current.png" alt="">
+        <span>我的</span>
+    </a>
+</div>
+
+
+
+<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="js/jquery-weui.min.js"></script>
+<script type="text/javascript" src="js/swiper.js"></script>
+<script type="text/javascript">
+    $(".swiper-container").swiper({})
+
+    var loading = false;
+    $(document.body).infinite().on("infinite", function() {
+        if(loading) return;
+        loading = true;
+        setTimeout(function() {
+            $("#club_store-list").append("\n" +
+                "    <div class=\"club_store-list_item\">\n" +
+                "        <div class=\"img_box\">\n" +
+                "            <img width=\"100%\" src=\"http://www.harborhousehome.com/UploadFile/Sku/2/220_220/1054724011.jpg\" alt=\"\">\n" +
+                "        </div>\n" +
+                "        <p class=\"name\">全面四件套</p>\n" +
+                "        <p class=\"score\"><span>68000</span>积分</p>\n" +
+                "        <p class=\"price\"><del>￥699</del></p>\n" +
+                "    </div>")
+        }, 2000);
+    });
+
+</script>
+
+</body>
+</html>

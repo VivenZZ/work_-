@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <link rel="stylesheet" type="text/css" href="css/weui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-weui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/club_style.css">
+    <link rel="stylesheet" href="css/club_store.css">
+</head>
+<body ontouchstart style="background-color: #F5F5F5">
+<div id="confirmOrder" class="pad">
+    <div class="shopCart_title">
+        <p class="cart">购物车(<span>6</span>)</p>
+        <span class="del">删除</span>
+    </div>
+    <ul class="confirmOrder_list shopCart_list">
+        <li class="confirmOrder_list_item">
+            <div class="shopCart_checkbox">
+                <span>
+                    <input type="checkbox" class="input_check" id="check1"/>
+                    <label for="check1"></label>
+                </span>
+            </div>
+            <div class="confirmOrder_list_img">
+                <img src="http://www.harborhousehome.com/UploadFile/Sku/2/220_220/1054724011.jpg" alt="">
+            </div>
+            <div class="shopCart_content">
+                <div class="shopCart_content_list">
+                    <div class="confirmOrder_list_info">
+                        <p class="title">全面四件套</p>
+                        <p class="spe">直径50cmX高65cm</p>
+                        <div class="col">
+                            <img src="http://www.harborhousehome.com/UploadFile/Sku/2/220_220/1054724011.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="confirmOrder_list_score">
+                        <p class="number">
+                            x<span>1</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="shopCart_content_list02">
+                    <div class="addCart_choice">
+                        <div class="title">
+                            <p class="score">
+                                <span>68000</span>积分
+                            </p>
+                            <p class="price">
+                                <del>￥680</del>
+                            </p>
+                        </div>
+                        <div class="btn">
+                            <span class="reduce"></span>
+                            <span class="text">
+                                <input type="number" oninput="value=value.replace(/[^\d]/g,'')" value="1">
+                            </span>
+                            <span class="add  add_current"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+
+    </ul>
+    <ul class="confirmOrder_list shopCart_list shopCart_list_exceed">
+        <li class="confirmOrder_list_item">
+            <div class="shopCart_checkbox">
+                <span>
+                    <input type="checkbox" class="input_check" id="check2"/>
+                    <label for="check2"></label>
+                </span>
+            </div>
+            <div class="confirmOrder_list_img">
+                <img src="http://www.harborhousehome.com/UploadFile/Sku/2/220_220/1054724011.jpg" alt="">
+            </div>
+            <div class="shopCart_content">
+                <div class="shopCart_content_list">
+                    <div class="confirmOrder_list_info">
+                        <p class="title">全面四件套</p>
+                        <p class="spe">直径50cmX高65cm</p>
+                        <div class="col">
+                            <img src="http://www.harborhousehome.com/UploadFile/Sku/2/220_220/1054724011.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="confirmOrder_list_score">
+                        <p class="number">
+                            x<span>1</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="shopCart_content_list02">
+                    <div class="addCart_choice">
+                        <div class="title">
+                            <p class="score">
+                                <span>68000</span>积分
+                            </p>
+                            <p class="price">
+                                <del>￥680</del>
+                            </p>
+                        </div>
+                        <div class="tips">商品已过期</div>
+                        <div class="btn">
+                            <span class="reduce"></span>
+                            <span class="text">
+                                <input type="number" value="2">
+                            </span>
+                            <span class="add  add_current"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+
+    </ul>
+    <ul class="confirmOrder_list shopCart_list">
+        <li class="confirmOrder_list_item">
+            <div class="shopCart_checkbox">
+                <span>
+                    <input type="checkbox" class="input_check" id="check3"/>
+                    <label for="check3"></label>
+                </span>
+            </div>
+            <div class="confirmOrder_list_img">
+                <img src="http://www.harborhousehome.com/UploadFile/Sku/2/220_220/1054724011.jpg" alt="">
+            </div>
+            <div class="shopCart_content">
+                <div class="shopCart_content_list">
+                    <div class="confirmOrder_list_info">
+                        <p class="title">全面四件套</p>
+                        <p class="spe">直径50cmX高65cm</p>
+                        <div class="col">
+                            <img src="http://www.harborhousehome.com/UploadFile/Sku/2/220_220/1054724011.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="confirmOrder_list_score">
+                        <p class="number">
+                            x<span>1</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="shopCart_content_list02">
+                    <div class="addCart_choice">
+                        <div class="title">
+                            <p class="score">
+                                <span>68000</span>积分
+                            </p>
+                            <p class="price">
+                                <del>￥680</del>
+                            </p>
+                        </div>
+                        <div class="btn">
+                            <span class="reduce"></span>
+                            <span class="text">
+                                <input type="text" oninput="value=value.replace(/[^\d]/g,'')" value="1">
+                            </span>
+                            <span class="add  add_current"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+
+    </ul>
+    <ul class="confirmOrder_list shopCart_list">
+        <li class="confirmOrder_list_item">
+            <div class="shopCart_checkbox">
+                <span>
+                    <input type="checkbox" class="input_check" id="check4"/>
+                    <label for="check4"></label>
+                </span>
+            </div>
+            <div class="confirmOrder_list_img">
+                <img src="http://www.harborhousehome.com/UploadFile/Sku/2/220_220/1054724011.jpg" alt="">
+            </div>
+            <div class="shopCart_content">
+                <div class="shopCart_content_list">
+                    <div class="confirmOrder_list_info">
+                        <p class="title">全面四件套</p>
+                        <p class="spe">直径50cmX高65cm</p>
+                        <div class="col">
+                            <img src="http://www.harborhousehome.com/UploadFile/Sku/2/220_220/1054724011.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="confirmOrder_list_score">
+                        <p class="number">
+                            x<span>1</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="shopCart_content_list02">
+                    <div class="addCart_choice">
+                        <div class="title">
+                            <p class="score">
+                                <span>68000</span>积分
+                            </p>
+                            <p class="price">
+                                <del>￥680</del>
+                            </p>
+                        </div>
+                        <div class="btn">
+                            <span class="reduce"></span>
+                            <span class="text">
+                                <input type="text" value="1">
+                            </span>
+                            <span class="add  add_current"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="shopCart_total">
+    <div id="checkAll" class="shopCart_checkbox">
+        <span>
+            <input type="checkbox" class="input_check" id="total_all"/>
+            <label for="total_all"></label>
+        </span>
+        <label for="total_all">全选</label>
+    </div>
+    <div class="shopCart_total_info">
+        <p class="shopCart_total_info_score">合计：<span>1356556积分</span></p>
+        <p class="shopCart_total_info_js">积分结算(<span>2</span>)</p>
+    </div>
+</div>
+<div class="club_store-bootm">
+    <a class="club_store-bootm_item">
+        <img src="./img/club_store/store_01-current.jpg" alt="">
+        <span>首页</span>
+    </a>
+    <a class="club_store-bootm_item club_store-bootm_item-current">
+        <img src="./img/club_store/store_02.png" alt="">
+        <span>购物车</span>
+    </a>
+    <a class="club_store-bootm_item">
+        <img src="./img/club_store/store_03-current.png" alt="">
+        <span>我的</span>
+    </a>
+</div>
+
+<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="js/jquery-weui.min.js"></script>
+<script type="text/javascript" src="js/swiper.js"></script>
+<script type="text/javascript">
+$(function () {
+    $('.del').click(function () {
+        $.modal({
+            title: '',
+            text: "是否将所选商品从购物车中删除?",
+            buttons: [
+                { text: "我再想想", onClick: function(){ console.log(1)} },
+                { text: "删除", className: "default", onClick: function(){ console.log(2)} }
+                ]
+        })
+    })
+    // 点击+-
+    $('.addCart_choice').each(function () {
+        var _this = $(this);
+        var val = _this.find('input').val();
+        // -
+        _this.find(".reduce").on('click', function () {
+            if (val <= 1) {
+                _this.find('.reduce').removeClass('reduce_current');
+            } else {
+                _this.find('input').val(--val)
+            }
+        })
+        // +
+        _this.find(".add").on('click', function () {
+            _this.find('.reduce').addClass('reduce_current');
+            _this.find('input').val(++val)
+        })
+    })
+    
+    // 全选
+    $("#checkAll").on('click', function () {
+        if ($(this).find('input').is(':checked')){
+            $(".input_check:checkbox").prop("checked", false);
+        } else {
+            $(".input_check:checkbox").prop("checked", true);
+        }
+    })
+
+})
+</script>
+
+</body>
+</html>

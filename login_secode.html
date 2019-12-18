@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>通过验证码登录</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<link rel="stylesheet" type="text/css" href="css/weui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-weui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body ontouchstart>
+
+	<!-- 注册表单 -->
+  <div class="weui-cells weui-cells_form security_login">
+	  <div class="weui-cell">
+	    <div class="weui-cell__hd"><label class="weui-label">手机号</label></div>
+	    <div class="weui-cell__bd">
+	      <input class="weui-input" type="number" placeholder="请输入手机号">
+	    </div>
+	  </div>
+
+	  <div class="weui-cell weui-cell_vcode">
+	    <div class="weui-cell__hd">
+	      <label class="weui-label">验证码</label>
+	    </div>
+	    <div class="weui-cell__bd">
+	      <input class="weui-input" type="number" placeholder="请输入验证码">
+	    </div>
+	    <div class="weui-cell__ft">
+	      <button id="vcode" class="weui-vcode-btn">获取验证码</button>
+	    </div>
+	  </div>
+	 
+		<a href="club_hh.html" class="weui-btn weui-btn_default btn_signin">登录</a>
+		<a href="index.html" class="security_code_enter">手机/账号登录</a>
+	</div>
+	<!-- signin底部文字 -->
+	<div class="sign-form_footer">
+		<a href="nearbyStore.html" class="fr">附近可用门店&gt;</a>
+	</div>
+
+  
+
+
+<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="js/jquery-weui.min.js"></script>
+<script type="text/javascript" src="js/countDown.js"></script>
+<!-- 错误提示使用如下代码 -->
+<script type="text/javascript">
+	if(false){
+		$.toptip('您输入有误，请重新输入', 1500, 'warning');
+	}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+/* 列表 */
+.nearby{
+	margin-top: 10px;
+	background-color: #fff;
+}
+.nearby .nearby-pannel:first-child:before{
+	content: none;
+}
+.nearby-pannel{
+	padding: .8rem .6rem;
+	padding-right: 0;
+	position: relative;
+}
+.nearby-pannel:before{
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 1px;
+  border-top: 1px solid #e5e5e5;
+  color: #e5e5e5;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scaleY(.5);
+  transform: scaleY(.5);
+  left: 15px;
+}
+.nearby .nearleft{
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.nearleft{
+	flex: 3;
+	padding-right: 2rem;
+}
+.nearby-title{
+	font-size: .7rem;
+	color: #000;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	font-weight: normal;
+}
+.nearby-desc{
+	font-size: .6rem;
+	color: #9f9f9f;
+	line-height: .9rem;
+	margin-top: .5rem;
+}
+
+.nearright{
+	text-align: center;
+	border-left: 1px solid #e7e7e7;
+	position: relative;
+}
+.loc{
+	width: 1.2rem;
+	height: 1.2rem;
+	padding-top: .75rem;
+}
+.distance{
+	font-size: .6rem;
+	color: #9f9f9f;
+}
+

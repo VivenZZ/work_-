@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>关联品牌会员卡</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<link rel="stylesheet" type="text/css" href="css/weui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-weui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/updateCard.css">
+</head>
+<body ontouchstart class="graybac">
+  <!-- 会员卡所属品牌 -->
+  <div class="weui-cells weui-cells_form connect_card" id="brand_entrance">   
+    <div class="weui-cell weui-cell_select weui-cell_select-after">
+      <div class="weui-cell__hd">
+        <label for="" class="weui-label">会员卡所属品牌</label>
+      </div>
+      <div class="weui-cell__hd">
+        <input class="weui-input" placeholder="请选择" id="choice" readonly>
+      </div>
+      <div class="weui-cell__bd"></div>
+    </div>
+    
+    <ul class="brandlist" id="brandContainer" style="display:none;">
+      <li class="hh" data-sign="Harbor House" data-value="1" >
+        <img src="img/brand_HH.png" alt="">
+      </li>
+      <li class="inkivy" data-sign="INK+IVY" data-value="2" >
+        <img src="img/brand_II.png" alt="">
+      </li>
+      <li class="tao" data-sign="Tao" data-value="3">
+        <img src="img/brand_Tao.png" alt="">
+      </li>
+    </ul>
+  </div> 
+
+
+  
+  <div class="signwords">
+    <p>（卡号/会员名或手机号二选一）</p>
+  </div>
+  
+  <!-- 会员卡具体信息 -->
+	<div class="weui-cells weui-cells_form connect_detail">
+    <div class="weui-cell border_bot">
+      <div class="weui-cell__hd"><label class="weui-label">卡号</label></div>
+      <div class="weui-cell__bd">
+        <input class="weui-input" id="weui-input" type="number" pattern="[0-9]*" placeholder="请输入原品牌卡号">
+      </div>
+    </div>
+
+    <div class="weui-cell">
+      <div class="weui-cell__hd"><label class="weui-label">会员名</label></div>
+      <div class="weui-cell__bd">
+        <input class="weui-input" type="number" placeholder="请输入原卡关联的会员名">
+      </div>
+    </div>
+ 
+  </div>
+
+  <div class="weui-cells weui-cells_form connect_detail">
+    <div class="weui-cell">
+      <div class="weui-cell__hd"><label class="weui-label">会员手机号</label></div>
+      <div class="weui-cell__bd">
+        <input class="weui-input" type="number" pattern="[0-9]*" placeholder="请输入原绑定的手机号码">
+      </div>
+    </div>
+  </div>
+
+  <!-- 按钮 -->
+  <a href="updateCardHH.html" class="weui-btn weui-btn_default btn_update btn_next">下一步</a>
+
+
+
+
+<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="js/jquery-weui.min.js"></script>
+<script type="text/javascript" src="js/brandChoose.js"></script>
+
+<script type="text/javascript">
+  if(false){
+    $.toptip('您输入有误，请重新输入', 1500, 'warning');
+  }
+  
+</script>
+
+</body>
+</html>
