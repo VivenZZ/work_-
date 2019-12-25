@@ -264,7 +264,7 @@
     margin-right: 0.45rem;
     flex-shrink: 0;
 }
-.club_score_details .details_info{
+.club_score_details .details_info p{
     padding-bottom: 5rem;
     text-indent: 1.5rem;
     font-size: 0.75rem;
