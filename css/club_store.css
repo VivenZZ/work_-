@@ -264,13 +264,22 @@
     margin-right: 0.45rem;
     flex-shrink: 0;
 }
-.club_score_details .details_info p{
-    padding-bottom: 5rem;
-    text-indent: 1.5rem;
+.club_score_details .details_info{
     font-size: 0.75rem;
+    padding-bottom: 5rem;
+    text-align: justify;
+}
+.club_score_details .details_info p{
+    text-indent: 0;
+    margin-top: 0.5rem;
+}
+.club_score_details .details_info .details_info_text{
+    text-indent: 1.5rem;
+    padding: 0 0.75rem;
 }
 .club_score_details .details_info img{
     width: 100%;
+    text-indent: 0;
 }
 .club_score_details_bottom{
     position: fixed;
