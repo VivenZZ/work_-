@@ -246,6 +246,7 @@
 	color: #3A3A3A;
 	font-size: .7rem;
 	line-height: 1.3rem;
+    -webkit-line-clamp: initial;
 }
 .member_benefits:first-child{
 	margin-top: 1.5rem;

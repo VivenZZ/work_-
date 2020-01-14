@@ -274,8 +274,12 @@
     margin-top: 0.5rem;
 }
 .club_score_details .details_info .details_info_text{
+    margin-top: 0.5rem;
     text-indent: 1.5rem;
     padding: 0 0.75rem;
+}
+.club_score_details .details_info .details_info_text p{
+    text-indent: 1.5rem;
 }
 .club_score_details .details_info img{
     width: 100%;
@@ -1131,7 +1135,7 @@
 }
 .club_store_none-order {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 30px;
     font-size: 16px;
     letter-spacing: 1px;
 }
